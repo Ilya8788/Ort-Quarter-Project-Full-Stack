@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/db68ddf85a.js"></script>
+    <link rel="stylesheet" href="/Contact us/contact.css" />
+    <script>
+      function alerts() {
+        alert("Thank you we will be touch");
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <!-- Nav Start -->
+      <nav class="container-fluid">
+        <div id="id_nav_show_hide" class="links">
+          <a class="logo" href="/index.html"
+            ><img src="/img/tropico-1.jpg" alt="Fruits"
+          /></a>
+          <a href="/index.html">Home</a>
+          <a href="/about us/about.html">about</a>
+          <a href="#">Contact us</a>
+          <a href="/gallery page/gallery.html">Gallery</a>
+          <a href="/Support/support.html">Support</a>
+        </div>
+
+        <i id="burger_btn" class="fa fa-bars burger" aria-hidden="true"></i>
+      </nav>
+      <!-- Nave End -->
+    </header>
+    <main>
+      <div class="container intro">
+        <div class="text-center">
+          <h1 class="display-1">Contact Us</h1>
+          <p class="display-5 fw-bold border-5 border-bottom border-warning">
+            We would love to hear from you
+          </p>
+        </div>
+        <div
+          class="row justify-content-center bg-light-subtle border border-5 border-secondary text-center py-5"
+        >
+          <div class="col-lg-6">
+            <form>
+              <label for="name " class="form-control border-0">Name:</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enetr your name"
+                class="form-control"
+              />
+              <label for="Last name " class="form-control border-0"
+                >Last Name:</label
+              >
+              <input
+                type="text"
+                id="Last Name"
+                placeholder="Enetr your Last Name"
+                class="form-control"
+              />
+
+              <label for="email" type="text" class="form-control border-0"
+                >Enetr a valid E-mail</label
+              >
+              <input type="email" id="email" placeholder="Example@mail.com" />
+
+              <label for="select" type="select" class="form-control border-0"
+                >Choose Topic:
+              </label>
+
+              <select
+                class="form-select form-select-lg mb-3"
+                aria-label=".form-select-lg example"
+              >
+                <option selected>Choose topic:</option>
+                <option value="1">General</option>
+                <option value="2">Price</option>
+                <option value="3">Complaint</option>
+                <option value="4">Question</option>
+              </select>
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Enter your message here</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+              <button
+                onclick=" alerts()"
+                type="submit"
+                class="btn btn-primary mt-3"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- * Footer -->
+    <footer class="container-fluid bg-dark text-light mt-5">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <div>
+            <small class="grey fw-bold"
+              >All right reserved &copy; Ilya Tsveyrozin. 2023</small
+            >
+          </div>
+          <!-- ! Icons on right Social Media -->
+          <div
+            class="social py-3 d-flex justify-content-end align-items-center"
+          >
+            <div>
+              <a href="https://www.facebook.com">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.twitter.com"
+                ><i class="fa fa-twitter-square" aria-hidden="true"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com"
+                ><i class="fa fa-instagram" aria-hidden="true"></i
+              ></a>
+            </div>
+
+            <div>
+              <a href="https://www.youtube.com"
+                ><i class="fa fa-youtube-play" aria-hidden="true"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/ilya-tsveyrozin-082353206/"
+                ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/burger.js"></script>
+  </body>
+</html>

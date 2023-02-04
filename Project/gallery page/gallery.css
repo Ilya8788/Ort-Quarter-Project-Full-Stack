@@ -1,0 +1,187 @@
+body {
+  background-color: rgba(255, 68, 0, 0.329);
+}
+
+nav {
+  background-color: #f22b0c;
+  height: 60px;
+}
+
+header nav .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+header nav .links a {
+  text-decoration: none;
+  color: azure;
+  font-size: 22px;
+  font-family: sans-serif !important;
+  transition: 300ms;
+}
+
+header nav .links a:hover {
+  background-color: azure;
+  color: orangered;
+  border-radius: 10px;
+}
+
+header nav .links a img {
+  height: 60px;
+  width: 190%;
+}
+
+header nav .burger {
+  display: none;
+}
+
+/*! Media Querries */
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  header nav {
+    width: 100% !important;
+  }
+
+  header nav .links {
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    width: 100% !important;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    text-align: center;
+    z-index: 999;
+  }
+
+  header nav .links a {
+    width: 100%;
+    padding: 24px 0;
+    border-radius: 0;
+    border-top: 1px solid azure;
+  }
+
+  header nav .burger {
+    display: block !important;
+    color: azure;
+    padding: 15px;
+    font-size: 30px;
+  }
+
+  header nav .links a img {
+    display: none;
+  }
+
+  header nav .links .logo {
+    display: none;
+  }
+
+  main .gallery img {
+    height: 100px;
+    width: 50%;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  header nav .links {
+    width: 100% !important;
+  }
+
+  header nav {
+    width: 100% !important;
+  }
+
+  footer {
+    width: 100% !important;
+  }
+
+  main .gallery img {
+    height: auto;
+    width: 50%;
+  }
+
+  .video iframe {
+    width: 100% !important;
+  }
+  .container .head1 {
+    width: 100%;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .video iframe {
+    width: 100% !important;
+  }
+  .container .head1 {
+    width: 100%;
+  }
+
+  header nav .links {
+    width: 100% !important;
+  }
+}
+/* !End */
+
+/* ! google fonts for reuse */
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive; */
+
+/* ! footer css */
+.social {
+  width: 70%;
+  gap: 15px;
+  font-size: 30px;
+}
+
+.head1 {
+  width: 94%;
+}
+
+i {
+  color: white;
+}
+
+/* * LightBox */
+.light_box {
+  /* גורם לדיב לעקוב אחרינו */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* רוחב וגובה בדיוק של החלון */
+  width: 100%;
+  height: 100%;
+  /* רקע שחור שקוף */
+  background: rgba(0, 0, 0, 0.591);
+  /* שתמיג יהיה הכי קדימה */
+  z-index: 999;
+  /* כדי לגרום לבוקס הפנימי להיות ממוקם באמצע */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  display: none;
+  box-sizing: border-box;
+}
+
+.light_box .inside_box {
+  background: rgba(255, 143, 143, 0.869);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+
+.light_box .inside_box img {
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+}

@@ -1,0 +1,248 @@
+body {
+  /* height: 300vh; */
+  background-color: rgba(255, 68, 0, 0.329);
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: #f22b0c;
+  height: 60px;
+}
+
+header nav .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+header nav .links a {
+  text-decoration: none;
+  color: azure;
+  font-size: 22px;
+  font-family: sans-serif !important;
+  transition: 300ms;
+}
+
+header nav .links a:hover {
+  background-color: azure;
+  color: orangered;
+  border-radius: 10px;
+}
+
+header nav .links a img {
+  height: 60px;
+  width: 190%;
+}
+
+/* ! באנרים */
+article aside .box1 {
+  border: 1px solid black;
+
+  width: 200px;
+  height: 500px;
+
+  background-image: url(/img/Banner\ 1.jpg);
+}
+
+article aside .box3 {
+  /* border: 1px solid black; */
+
+  width: 200px;
+  height: 350px;
+}
+
+article aside .box3 img:hover {
+  cursor: pointer;
+}
+/*!  סוף באנרים  */
+
+/* article {
+  margin-top: 800px;
+} */
+
+/*! Media Querries */
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  html body {
+    overflow-x: hidden !important;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .box5 {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 58%;
+  }
+
+  .box3 {
+    display: none;
+  }
+
+  .boxtext {
+    font-size: large !important;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header nav .links {
+    display: none;
+    flex-direction: column;
+    padding: 0px 0;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    width: 100% !important;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    text-align: center;
+    z-index: 999;
+  }
+
+  header nav .links a {
+    width: 100%;
+    padding: 24px 0;
+    border-radius: 0;
+    border-top: 1px solid azure;
+  }
+
+  header nav .burger {
+    display: block !important;
+    color: azure;
+    padding: 15px;
+    font-size: 30px;
+  }
+
+  header nav .links a img {
+    display: none;
+  }
+
+  header nav .links .logo {
+    display: none;
+  }
+
+  section .gallery img {
+    height: 150px !important;
+    width: 100%;
+  }
+
+  .oranges {
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  header nav .links {
+    width: 100% !important;
+  }
+  section .gallery img {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  nav {
+    width: 100% !important;
+    gap: 10px !important;
+  }
+
+  nav img {
+    width: 100% !important;
+    gap: 10px !important;
+  }
+
+  header nav .links {
+    width: 100% !important;
+  }
+}
+/* !End */
+
+header nav .burger {
+  display: none;
+}
+
+/* .carousel {
+  width: 100%;
+  height: 360px;
+} */
+
+/* #myCarousel .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 500vh;
+  overflow: hidden;
+} */
+
+aside .box2 h1 {
+  border-bottom: 15px solid yellow;
+
+  border-radius: 10px;
+}
+
+/* font-family: 'Pacifico', cursive; */
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Pacifico', cursive; */
+
+/* .fruits {
+  font-family: "Pacifico", cursive;
+} */
+
+.intro {
+  background-color: orangered;
+  font-family: "Dancing Script", cursive;
+  font-family: "Pacifico", cursive;
+}
+
+/* ? mini gallery */
+.gallery img {
+  transition-duration: 2s;
+}
+
+.gallery img:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  transition-timing-function: ease-in-out;
+}
+
+footer {
+  height: 80px;
+}
+
+/* ! צבעים לשימוש חוזר */
+.orange {
+  color: orangered;
+}
+
+.white-bg {
+  background-color: rgba(248, 248, 248, 0.733) !important;
+  color: orangered;
+}
+
+.test {
+  height: 300px;
+  width: 100%;
+}
+
+.grey {
+  color: rgb(105, 105, 105);
+}
+
+.social {
+  width: 70%;
+  gap: 15px;
+  font-size: 30px;
+}
+
+i {
+  color: white;
+}
