@@ -1,7 +1,9 @@
 body {
   /* height: 300vh; */
   background-color: rgba(255, 68, 0, 0.329);
+  /* תיקון לבאג שהתגלה שיצר רווח מצד ימין של האתר */
   overflow-x: hidden;
+  /* סוף תיקון */
 }
 
 nav {
@@ -64,9 +66,15 @@ article aside .box3 img:hover {
 /*! Media Querries */
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-  html body {
-    overflow-x: hidden !important;
+  /* תיקון לבאג שהתגלה שיצר רווח מצד ימין של האתר */
+  * {
+    margin: 0 !important;
   }
+
+  .gal {
+    margin: 0 auto !important;
+  }
+  /* סוף תיקון */
 
   .box {
     display: none;
@@ -140,6 +148,17 @@ article aside .box3 img:hover {
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  /* תיקון לבאג שהתגלה שיצר רווח מצד ימין של האתר */
+
+  * {
+    margin: 0 !important;
+  }
+
+  .gal {
+    margin: 0 auto !important;
+  }
+  /* סוף תיקון */
+
   header nav .links {
     width: 100% !important;
   }
@@ -149,11 +168,17 @@ article aside .box3 img:hover {
   }
 }
 
-/* * Small devices */
-@media (max-width: 400px) {
-  html body {
-    overflow-x: hidden !important;
+/* * Small devices S10+ (My Phone)*/
+@media (max-width: 500px) {
+  /* תיקון לבאג שהתגלה שיצר רווח מצד ימין של האתר */
+  * {
+    margin: 0 !important;
   }
+
+  .gal {
+    margin: 0 auto !important;
+  }
+  /* סוף תיקון */
 
   .box1 {
     display: none;
@@ -239,6 +264,16 @@ article aside .box3 img:hover {
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  /* תיקון לבאג שהתגלה שיצר רווח מצד ימין של האתר */
+  * {
+    margin: 0 !important;
+  }
+
+  .gal {
+    margin: 0 auto !important;
+  }
+  /* סוף תיקון */
+
   header nav .links {
     width: 100% !important;
   }
@@ -250,6 +285,15 @@ article aside .box3 img:hover {
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  /* תיקון לבאג שהתגלה שיצר רווח מצד ימין של האתר */
+  * {
+    margin: 0 !important;
+  }
+
+  .gal {
+    margin: 0 auto !important;
+  }
+  /* סוף תיקון */
   nav {
     width: 100% !important;
     gap: 10px !important;
